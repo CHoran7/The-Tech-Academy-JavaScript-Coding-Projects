@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset='UTF-8'>
+        <title>Pizza Menu</title>
+        <link rel="stylesheet" href="./css/pizza_menu.css">
+    </header>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div id="size">
+                        <input type="radio" name="size" id="personal">Personal<br>
+                        <input type="radio" name="size" id="medium">Medium<br>
+                        <input type="radio" name="size" id="large">Large<br>
+                        <input type="radio" name="size" id="extralarge">Extra Large<br>
+                    </div>
+                </td>
+                <td>
+                    <div id="sauce">
+                            <input type="radio" name="sauce" id="marinara">Marinara Sauce<br>
+                            <input type="radio" name="sauce" id="white">White Sauce<br>
+                            <input type="radio" name="sauce" id="barbeque">Barbeque Sauce<br>
+                            <input type="radio" name="sauce" id="none">No Sauce<br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="crust">
+                            <input type="radio" name="crust" id="plain">Plain Crust<br>
+                            <input type="radio" name="crust" id="garlic_butter">Garlic Butter Crust<br>
+                            <input type="radio" name="crust" id="cheese_stuffed">Cheese Stuffed Crust<br>
+                            <input type="radio" name="crust" id="spicy">Spicy Crust<br>
+                            <input type="radio" name="crust" id="house_special">House Speical Crust<br>
+                    </div>
+                </td>
+                <td>
+                    <div id="cheese">
+                        <input type="radio" name="cheese" id="regular">Regular<br>
+                        <input type="radio" name="cheese" id="nocheese">No cheese<br>
+                        <input type="radio" name="cheese" id="extracheese">Extra cheese
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="meats">
+                        <input type="checkbox" id="meat0">Pepperoni<br>
+                        <input type="checkbox" id="meat1">Sausage<br>
+                        <input type="checkbox" id="meat2">Canadian Bacon<br>
+                        <input type="checkbox" id="meat3">Ground Beef<br>
+                        <input type="checkbox" id="meat4">Anchovy<br>
+                        <input type="checkbox" id="meat5">Chicken<br>
+                    </div>
+                </td>
+                <td>
+                    <div id="veggies">
+                        <input type="checkbox" id="veggie0">Tomatoes<br>
+                        <input type="checkbox" id="veggie1">Onions<br>
+                        <input type="checkbox" id="veggie2">Olives<br>
+                        <input type="checkbox" id="veggie3">Green Peppers<br>
+                        <input type="checkbox" id="veggie4">Mushrooms<br>
+                        <input type="checkbox" id="veggie5">Pineapple<br>
+                        <input type="checkbox" id="veggie6">Spinach<br>
+                        <input type="checkbox" id="veggie7">Jalapeno<br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="order">
+            <button id="place_order" onclick="createReceipt()">Place Order</button>
+        </div>
+        <div id="receipt">
+            <table>
+                <tr>
+                    <th>Items</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td id="pizzasize">Personal</td>
+                    <td id="sizecost">$6.00</td>
+                </tr>
+                <tr>
+                    <td id="pizzasauce">Marinara</td>
+                    <td id="saucecost">$0.00</td>
+                </tr>
+                <tr>
+                    <td id="pizzacrust">Plain Crust</td>
+                    <td id="crustcost">$0.00</td>
+                </tr>
+                <tr>
+                    <td id="pizzacheese">Regular</td>
+                    <td id="cheesecost">$0.00</td>
+                </tr>
+                <tr>
+                    <td id="pizzameat">No meat</td>
+                    <td id="meatcost">$0.00</td>
+                </tr>
+                <tr>
+                    <td id="pizzaveggies">No veggies</td>
+                    <td id="veggiecost">$0.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="totalcost"><strong>$6.00</strong></td>
+                </tr>
+            </table>
+        </div>
+        <script src="./js/pizza_menu.js"></script>
+    </body>
+</html>
